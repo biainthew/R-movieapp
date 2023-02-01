@@ -1,0 +1,20 @@
+.container{
+    .loader{
+        width: 80%;
+        height: 100vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        &_text{
+            font-size: 30px;
+            color: rgb(75, 0, 59);
+        }
+    }
+    .movies{
+        width: 77%;
+        margin: 50px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }    
+}

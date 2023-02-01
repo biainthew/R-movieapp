@@ -1,0 +1,93 @@
+*{margin: 0; padding: 0;}
+.movies{
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-between;
+}
+.movie-detail{
+    width: 80%;
+    padding-top: 50px;
+    .loadings{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: #dfed59;
+        .loading{
+            font-size: 5rem;
+        }
+    }
+    .title{
+        font-size: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #74235e;
+        text-shadow: 1px 1px 1px #000;
+    }
+    .img-box{
+        text-align: center;
+        img{
+            max-width: 430px;
+            width: 100%;
+        }
+    }
+    .content{
+        width: 70%;
+        margin: 0 auto;
+        line-height: 200%;
+        flex-basis: 60%;
+        .info{
+            >span{
+                display: block;
+            }
+            .movie-title{
+                font-size: 40px;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            .movie-rating{
+
+            }
+            .movie-runtime{
+
+            }
+        }
+        .genres{
+            p{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .list{
+                display: flex;
+                padding: 0;
+                li{
+                  list-style: none;
+                  position: relative;
+                  padding: 0 8px;
+                  &:first-child{
+                    padding-left: 0;
+                  }
+                  &::after{
+                    content: "";
+                    width: 1px;
+                    height: 14px;
+                    background: #222;
+                    position: absolute;
+                    right: 0;
+                    top: 10px;
+                  }
+                  &:last-child:after{
+                    display: none;
+                  }
+                }
+            }
+        }
+        .summaries{
+            .summarya{
+                &::first-letter{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
